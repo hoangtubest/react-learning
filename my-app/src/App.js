@@ -5,7 +5,6 @@ import Game from "./components/tictactoe/Game";
 // import YoutubeList from "./components/youtube/YoutubeList";
 
 function App() {
-  const name = "Hoang LC";
   return (
     <div className="App">
       {/* <YoutubeList></YoutubeList> */}

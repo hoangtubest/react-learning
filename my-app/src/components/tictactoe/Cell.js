@@ -1,6 +1,6 @@
 import React from "react";
 
-const Cell = (props) => {
+const Cell = ({ value, onClick, className }) => {
   // object destructuring
   // const student = {
   //   name: "hoanglc",
@@ -13,8 +13,8 @@ const Cell = (props) => {
   // const { value, onClick } = props;
   // console.log(value, onClick);
   return (
-    <div className="game-cell" onClick={props.onClick}>
-      {props.value}
+    <div className={`game-cell ${className}`} onClick={onClick}>
+      {value}
     </div>
   );
 };
