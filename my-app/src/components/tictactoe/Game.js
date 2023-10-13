@@ -28,6 +28,7 @@ const gameReducer = (state, action) => {
       const nextState = JSON.parse(JSON.stringify(state));
       nextState.board = Array(9).fill(null);
       nextState.xIsNext = true;
+      console.log(13);
       return nextState;
     }
 

@@ -1,0 +1,19 @@
+.button {
+  display: inline-block;
+  padding: 20px 30px;
+  color: #fff;
+  font-size: 16px;
+  background: #2979ff;
+  width: 300px;
+  border: none;
+  outline: none;
+  margin: 10px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.buttonSecondary {
+  background: #fff;
+  color: #2979ff;
+  border: 1px solid currentColor;
+}
