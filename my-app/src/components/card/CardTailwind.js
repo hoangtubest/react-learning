@@ -1,6 +1,9 @@
 import React from "react";
 
-const CardTailwind = () => {
+const CardTailwind = (props) => {
+  const amountClasses = `text-lg font-bold bg-clip-text text-transparent ${
+    props.colorAmount ? "bg-secondary-gradient" : "bg-primary-gradient"
+  }`;
   return (
     <div>
       <div className="w-full h-[300px] overflow-hidden rounded-lg">
@@ -18,16 +21,26 @@ const CardTailwind = () => {
               alt="Avatar"
               className="w-[30px] h-[30px] rounded-full shrink-0"
             />
-            <span className="font-light c-[#333]">@zndrson</span>
+            <span className="text-base font-light c-[#333] leading-[1.5]">
+              @zndrson
+            </span>
           </div>
           <div className="flex justify-between items-center gap-x-[12px]">
-            <img src="/ico_heart.svg" alt="Heart" />
-            <span className="font-normal">256</span>
+            <img
+              src="/ico_heart.svg"
+              alt="Heart"
+              className="w-[20px] shrink-0"
+            />
+            <span className="text-base font-normal c-[#333] leading-[1.5]">
+              256
+            </span>
           </div>
         </div>
-        <div className="card-foot">
-          <h3 className="card-title">Cosmic Perspective</h3>
-          <span className="card-amount">12,000 PSL</span>
+        <div className="mt-[30px] flex justify-between items-center gap-x-[12px]">
+          <h3 className={`font-medium ${props.fontSize || "text-xl"}`}>
+            Cosmic Perspective
+          </h3>
+          <span className={amountClasses}>12,000 PSL</span>
         </div>
       </div>
     </div>
