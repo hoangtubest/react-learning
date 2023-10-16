@@ -1,8 +1,9 @@
 import "./App.css";
 import CardList from "./components/card/CardList";
-import Card2 from "./components/card/Card2";
 import { GlobalStyles } from "./GlobalStyles";
 import { ThemeProvider } from "styled-components";
+import CardTailwind from "./components/card/CardTailwind";
+// import Card2 from "./components/card/Card2";
 // import Button from "./components/button/Button";
 // import Game from "./components/tictactoe/Game";
 // import Counter from "./components/counter/Counter";
@@ -27,12 +28,12 @@ function App() {
       {/* <Button>Primary</Button>
       <Button secondary>Secondary</Button> */}
       <CardList>
-        <Card2 colorAmount={"#ff4444"}></Card2>
-        <Card2 fontSize={"16px"}></Card2>
-        <Card2 colorAmount={"green"}></Card2>
-        <Card2></Card2>
-        <Card2></Card2>
-        <Card2></Card2>
+        <CardTailwind colorAmount={"#ff4444"}></CardTailwind>
+        <CardTailwind fontSize={"16px"}></CardTailwind>
+        <CardTailwind colorAmount={"green"}></CardTailwind>
+        <CardTailwind></CardTailwind>
+        <CardTailwind></CardTailwind>
+        <CardTailwind></CardTailwind>
       </CardList>
     </ThemeProvider>
   );
